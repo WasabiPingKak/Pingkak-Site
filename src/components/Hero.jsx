@@ -15,7 +15,7 @@ export default function Hero() {
             └ 軟體工程 × 文件創作
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 space-y-4">
-            你好，我是冰角，一位擅長整理與教學的 Vtuber 工程師。<br />
+            我是冰角，一位喜歡做整理與教學的工程師 Vtuber。<br />
             比起即興表演，我更習慣用文字與系統化的內容，去傳遞我的理解與熱情。<br />
             <br />
             這裡是我整理文件、記錄創作的基地。<br />

@@ -3,7 +3,7 @@ import React from "react";
 
 const projects = [
   {
-    title: "🗺️ VTMap",
+    title: "🗺️ Vtuber TrailMap",
     description: "Vtuber 頻道分析與導流工具，讓你快速發現有趣的直播與頻道。",
     link: "https://www.vtubertrailmap.com/",
   },
@@ -37,7 +37,7 @@ export default function FeaturedProjects() {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center md:text-left">
-          精選內容
+          重點內容
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

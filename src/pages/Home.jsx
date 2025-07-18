@@ -1,13 +1,12 @@
 // src/pages/Home.jsx
 import React from "react";
-import Header from "../components/Header";
+import MainLayout from "../components/layouts/MainLayout";
 import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col bg-white dark:bg-gray-900 transition-colors">
-      <Header />
+    <MainLayout>
       <Hero />
-    </main>
+    </MainLayout>
   );
 }

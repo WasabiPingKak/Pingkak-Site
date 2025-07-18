@@ -4,8 +4,17 @@ import React from "react";
 export default function Header() {
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-4 flex items-center justify-between">
-        <h1 className="text-xl font-bold text-gray-800 dark:text-white">冰角 LOGO</h1>
+      <div className="w-full px-6 md:px-12 lg:px-24 py-4 flex justify-between items-center">
+        {/* 左側 LOGO */}
+        <a href="/" className="flex items-center">
+          <img
+            src={`${import.meta.env.BASE_URL}assets/logo.png`}
+            alt="冰角 LOGO"
+            className="h-20 w-auto object-contain"
+          />
+        </a>
+
+        {/* 右側導覽列 */}
         <nav className="flex gap-6 text-sm font-medium">
           <a
             href="#featured"
@@ -28,5 +37,6 @@ export default function Header() {
         </nav>
       </div>
     </header>
+
   );
 }

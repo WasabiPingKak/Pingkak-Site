@@ -5,7 +5,7 @@ import SocialLinks from "../components/SocialLinks";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center px-6 md:px-12 lg:px-24 pt-32 pb-12 bg-white dark:bg-gray-900 transition-colors">
+    <section className="min-h-screen flex flex-col items-center px-6 md:px-12 lg:px-24 pt-32 pb-12 bg-white dark:bg-gray-900/80 transition-colors">
       <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12">
         {/* 左側文字區塊 */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">

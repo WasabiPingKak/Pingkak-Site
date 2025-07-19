@@ -151,16 +151,15 @@ export default function PlanPage() {
                 <h3 className="section-heading">
                   網站
                 </h3>
-                <div className="mt-4 flex items-center gap-2">
-                  <a
-                    href="https://www.vtubertrailmap.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 text-xl transition"
-                  >
-                    🗺️ VTMap 頻道旅圖｜Vtuber TrailMap
-                  </a>
-                </div>
+                <a
+                  href="https://www.vtubertrailmap.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 rounded-md bg-blue-600 text-white dark:text-white hover:bg-blue-700 dark:hover:bg-blue-500 text-xl transition"
+                >
+                  🗺️ VTMap 頻道旅圖｜Vtuber TrailMap
+                </a>
+
                 {/* GitHub 專案卡片 */}
                 <div className="mt-6">
                   <h3 className="section-heading">

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isDark, setIsDark] = useState(false);
 
+  // 捲動淡出效果
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
@@ -22,6 +25,22 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  // 初始化深色模式
+  useEffect(() => {
+    const saved = localStorage.getItem("theme");
+    const isDarkPref = saved === "dark";
+    setIsDark(isDarkPref);
+    document.documentElement.classList.toggle("dark", isDarkPref);
+  }, []);
+
+  // 切換深色模式
+  const toggleDarkMode = () => {
+    const nextDark = !isDark;
+    setIsDark(nextDark);
+    document.documentElement.classList.toggle("dark", nextDark);
+    localStorage.setItem("theme", nextDark ? "dark" : "light");
+  };
+
   return (
     <header
       className={`w-full fixed top-0 left-0 z-50 transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -37,33 +56,44 @@ export default function Header() {
           />
         </Link>
 
-        {/* 右側導覽列 */}
-        <nav className="flex gap-6 text-2xl font-medium">
-          <Link
-            to="/"
-            className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
+        {/* 導覽列 + 黑暗模式按鈕 */}
+        <div className="flex items-center gap-6 text-2xl font-medium">
+          <nav className="flex gap-6">
+            <Link
+              to="/"
+              className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
+            >
+              首頁
+            </Link>
+            <Link
+              to="/creator-credits"
+              className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
+            >
+              設計
+            </Link>
+            <Link
+              to="/plan"
+              className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
+            >
+              頻道計劃
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
+            >
+              聯絡我
+            </Link>
+          </nav>
+
+          {/* 深色模式按鈕 */}
+          <button
+            onClick={toggleDarkMode}
+            className="text-gray-700 hover:text-yellow-500 dark:text-gray-300 dark:hover:text-yellow-300 transition"
+            aria-label="Toggle dark mode"
           >
-            首頁
-          </Link>
-          <Link
-            to="/creator-credits"
-            className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
-          >
-            設計
-          </Link>
-          <Link
-            to="/plan"
-            className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
-          >
-            頻道計劃
-          </Link>
-          <Link
-            to="/contact"
-            className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
-          >
-            聯絡我
-          </Link>
-        </nav>
+            {isDark ? <FaSun /> : <FaMoon />}
+          </button>
+        </div>
       </div>
     </header>
   );

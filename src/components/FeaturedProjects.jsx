@@ -33,7 +33,7 @@ export default function FeaturedProjects() {
   return (
     <section
       id="featured"
-      className="bg-white dark:bg-gray-800 py-16 px-6 md:px-12 lg:px-24 transition-colors"
+      className="bg-white dark:bg-gray-900/80 py-16 px-6 md:px-12 lg:px-24 transition-colors"
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center md:text-left">
@@ -55,7 +55,7 @@ export default function FeaturedProjects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 text-sm transition"
+                className="inline-block px-4 py-2 rounded-md bg-blue-600 text-white dark:text-white hover:bg-blue-700 dark:hover:bg-blue-500 text-sm transition"
               >
                 查看詳情
               </a>

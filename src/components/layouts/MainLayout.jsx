@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 export default function MainLayout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-zinc-900 text-gray-900 dark:text-white">
+    <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900/80 text-gray-900 dark:text-white">
       <Header />
       <main className="flex-1 pt-32">{children}</main>
       <Footer />

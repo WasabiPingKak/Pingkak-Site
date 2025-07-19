@@ -34,7 +34,7 @@ export default function ContactPage() {
               也歡迎合作邀約、工商邀約等各種聯繫。
             </p>
             <p className="text-gray-700 dark:text-gray-300">
-              若是商業合作，請提供你的身份背景、合作方向與預期時程，建議使用 e-mail 作為主要聯絡管道。<br />
+              若是商業合作，請提供你的身份背景、合作方向與預期時程，推薦使用 e-mail 作為主要聯絡管道。<br />
               我會盡快抽空回覆，感謝理解！
             </p>
 

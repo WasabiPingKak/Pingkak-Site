@@ -38,7 +38,7 @@ export default function GitHubRepoCard({ repo, title }) {
       href={data.html_url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block max-w-md border border-gray-200 dark:border-gray-700 rounded-xl p-4 bg-white dark:bg-gray-800 shadow hover:shadow-md transition"
+      className="block max-w-md border border-gray-200 dark:border-gray-700 rounded-xl p-4 bg-white dark:bg-zinc-800 shadow hover:shadow-md transition"
     >
       <div className="flex items-center space-x-4">
         {/* 頭像 + GitHub logo 疊圖 */}

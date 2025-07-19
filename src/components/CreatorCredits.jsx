@@ -41,13 +41,13 @@ const ImageDownloadCard = ({ imageSrc, alt, downloadUrl, caption }) => (
   </a>
 );
 
-export default function AboutMe() {
+export default function CreatorCredits() {
   return (
     <section
       id="about"
       className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 space-y-12 text-gray-900 dark:text-white"
     >
-      <h1 className="text-4xl font-bold mb-10 text-center">
+      <h1 className="text-6xl font-bold mb-10 text-center">
         偉大的設計師們
       </h1>
       {/* 繪師 */}

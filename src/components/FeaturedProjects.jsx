@@ -3,7 +3,7 @@ import React from "react";
 
 const projects = [
   {
-    title: "🗺️ Vtuber TrailMap",
+    title: "🗺️ VTMap 頻道旅圖｜Vtuber TrailMap",
     description: "Vtuber 頻道分析與導流工具，讓你快速發現有趣的直播與頻道。",
     link: "https://www.vtubertrailmap.com/",
   },

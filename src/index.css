@@ -25,3 +25,10 @@ a {
 button {
   @apply rounded-lg px-4 py-2 border border-transparent text-sm font-medium cursor-pointer transition;
 }
+
+/* 通用區塊標題樣式 */
+@layer components {
+  .section-heading {
+    @apply text-2xl font-semibold text-black dark:text-white mb-3;
+  }
+}

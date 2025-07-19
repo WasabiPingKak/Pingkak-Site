@@ -9,7 +9,7 @@ export default function Hero() {
         {/* 左側文字區塊 */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white">
-            山葵冰角<br />
+            山葵冰角 Wasabi PingKak<br />
           </h1>
           <h2 className="text-xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-200">
             └ 軟體工程 × 文件創作

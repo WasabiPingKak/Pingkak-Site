@@ -51,12 +51,12 @@ export default function Header() {
           >
             設計
           </Link>
-          <a
-            href="/docs"
+          <Link
+            to="/plan"
             className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
           >
-            頻道經營計劃
-          </a>
+            頻道計劃
+          </Link>
           <a
             href="#contact"
             className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"

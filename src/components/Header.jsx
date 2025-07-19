@@ -57,12 +57,12 @@ export default function Header() {
           >
             頻道計劃
           </Link>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
           >
             聯絡我
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

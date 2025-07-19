@@ -1,7 +1,7 @@
 // src/components/Hero.jsx
 import React from "react";
 import FeaturedProjects from "./FeaturedProjects";
-import { FaYoutube, FaTwitter, FaDiscord, FaGithub, FaEnvelope } from "react-icons/fa";
+import SocialLinks from "../components/SocialLinks";
 
 export default function Hero() {
   return (
@@ -26,51 +26,7 @@ export default function Hero() {
           </p>
 
           {/* 社群連結區塊 */}
-          <div className="flex justify-center md:justify-start gap-6 pt-2">
-            <a
-              href="https://www.youtube.com/@PingKak山葵冰角"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="YouTube"
-              className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors text-2xl"
-            >
-              <FaYoutube />
-            </a>
-            <a
-              href="https://twitter.com/wasabi_pingkak"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors text-2xl"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://discord.gg/ABpdGBbDe4"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Discord"
-              className="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition-colors text-2xl"
-            >
-              <FaDiscord />
-            </a>
-            <a
-              href="https://github.com/wasabipingkak"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors text-2xl"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="mailto:wasabi.pingkak@gmail.com"
-              aria-label="Gmail"
-              className="text-gray-700 dark:text-gray-300 hover:text-rose-500 transition-colors text-2xl"
-            >
-              <FaEnvelope />
-            </a>
-          </div>
+          <SocialLinks />
         </div>
 
         {/* 右側圖像區塊 */}

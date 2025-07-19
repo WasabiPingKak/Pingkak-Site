@@ -1,6 +1,7 @@
 // src/components/Hero.jsx
 import React from "react";
 import FeaturedProjects from "./FeaturedProjects";
+import { FaYoutube, FaTwitter, FaDiscord, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -23,6 +24,53 @@ export default function Hero() {
           <p className="text-lg text-gray-700 dark:text-gray-300 space-y-4">
             以下是我目前正在經營的內容，包含一些實作中的專案與還在持續補完的技術筆記。
           </p>
+
+          {/* 社群連結區塊 */}
+          <div className="flex justify-center md:justify-start gap-6 pt-2">
+            <a
+              href="https://www.youtube.com/@PingKak山葵冰角"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors text-2xl"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://twitter.com/wasabi_pingkak"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              className="text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors text-2xl"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://discord.gg/ABpdGBbDe4"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Discord"
+              className="text-gray-700 dark:text-gray-300 hover:text-indigo-500 transition-colors text-2xl"
+            >
+              <FaDiscord />
+            </a>
+            <a
+              href="https://github.com/wasabipingkak"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors text-2xl"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="mailto:wasabi.pingkak@gmail.com"
+              aria-label="Gmail"
+              className="text-gray-700 dark:text-gray-300 hover:text-rose-500 transition-colors text-2xl"
+            >
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
 
         {/* 右側圖像區塊 */}
@@ -37,7 +85,6 @@ export default function Hero() {
 
       {/* 精選內容卡片區塊 */}
       <FeaturedProjects />
-
     </section>
   );
 }

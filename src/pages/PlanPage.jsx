@@ -146,10 +146,6 @@ export default function PlanPage() {
                   影片主題分類採用標題關鍵字比對方式，並可自訂規則與隱私設定，提供比 YouTube 原生介面更完整的內容洞察。
                 </p>
                 <p className="mb-3">
-                  本專案涵蓋資料擷取、分類邏輯、前後端架構與雲端部署，具備 staging/production 環境切換與版本控管。
-                  技術上整合了 YouTube Data API、Firebase Firestore、Google Apps Script API 與 ECPay 金流，支援創作者即時查看頻道內容結構與導流成效。
-                </p>
-                <p className="mb-3">
                   第一階段開發時程為 2025/04/06 至 2025/07/04，目前已進入穩定維護階段，仍將持續針對分類規則與導流模組進行小規模更新。
                 </p>
                 <h3 className="section-heading">

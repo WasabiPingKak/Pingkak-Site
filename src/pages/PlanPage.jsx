@@ -38,7 +38,11 @@ export default function PlanPage() {
       {/*    <PlanSectionSidebar sections={sectionMeta} /> */}
       <MainLayout>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 space-y-12 text-gray-900 dark:text-white">
-          <h1 className="text-6xl font-bold mb-10 text-center">頻道活動計劃</h1>
+          <h1 className="text-6xl font-bold mb-10 text-center">
+            頻道
+            <br className="block md:hidden" />
+            活動計劃
+          </h1>
           {/* ✅ 已完成 */}
           <section id="completed" className="mt-10">
             <h2 className="mb-8">

@@ -25,7 +25,8 @@ export default function ContactPage() {
           </div>
 
           {/* 文字與連結區塊 */}
-          <div className="flex-1 space-y-4 text-center md:text-left">
+          {/* 文字與連結區塊 */}
+          <div className="flex-1 space-y-4 text-left">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
               聯絡我
             </h1>
@@ -41,6 +42,7 @@ export default function ContactPage() {
             {/* 社群連結區塊 */}
             <SocialLinks />
           </div>
+
         </div>
       </section>
     </MainLayout>

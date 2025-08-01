@@ -8,6 +8,11 @@ const projects = [
     link: "https://www.vtubertrailmap.com/",
   },
   {
+    title: "🌍 GeoPingKak",
+    description: "GeoGuessr 的推廣網站，提供每日免費五題遊玩連結與教學",
+    link: "https://geopingkak.web.app/",
+  },
+  {
     title: "❄️ LeetCode 冷藏庫",
     description: "我的 LeetCode 解題記錄與觀念筆記，持續更新中。",
     link: "https://github.com/WasabiPingKak/leetcode_pingkak",

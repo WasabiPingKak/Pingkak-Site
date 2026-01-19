@@ -114,6 +114,6 @@ npm run deploy
 
 ## 📖 詳細文件
 
-更多詳細的專案說明、元件介紹與維護指南，請參閱 [claude.me](./claude.me)。
+更多詳細的專案說明、元件介紹與維護指南，請參閱 [claude.md](./claude.md)。
 
 ---

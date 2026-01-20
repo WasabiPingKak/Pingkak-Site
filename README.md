@@ -56,6 +56,7 @@ npm run deploy
 │   │   ├── CreatorCard.jsx       # 創作者卡片
 │   │   ├── CreatorCredits.jsx    # 設計師致謝
 │   │   ├── PlanItemCard.jsx      # 計劃項目卡片
+│   │   ├── PlanSectionSidebar.jsx # 頻道計劃側邊目錄導航
 │   │   ├── GitHubRepoCard.jsx    # GitHub 專案卡片
 │   │   ├── ScrollToTopButton.jsx # 回到頂部按鈕
 │   │   ├── SocialLinks.jsx       # 社群連結
@@ -81,7 +82,7 @@ npm run deploy
 ### 四個主要頁面
 1. **首頁** (`/`) - 個人介紹、社群連結、精選專案
 2. **設計** (`/creator-credits`) - 繪師、建模師、LOGO 設計師介紹與設計資源
-3. **頻道計劃** (`/plan`) - 已完成、進行中、籌備中的專案與活動
+3. **頻道計劃** (`/plan`) - 進行中與已完成的專案與活動，包含側邊目錄導航
 4. **聯絡我** (`/contact`) - 聯絡資訊與社群連結
 
 ### 核心特性

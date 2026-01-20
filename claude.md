@@ -39,7 +39,7 @@ npm run deploy       # Deploy to GitHub Pages (pushes dist/ to gh-pages branch)
 │   │   ├── CreatorCard.jsx      # 創作者卡片
 │   │   ├── CreatorCredits.jsx   # 設計師致謝區塊
 │   │   ├── PlanItemCard.jsx     # 計劃項目卡片
-│   │   ├── PlanSectionSidebar.jsx
+│   │   ├── PlanSectionSidebar.jsx # 頻道計劃側邊導航 (IntersectionObserver)
 │   │   ├── SocialLinks.jsx      # 社群連結
 │   │   └── ScrollToTopButton.jsx
 │   └── pages/
@@ -91,5 +91,14 @@ Use Tailwind breakpoints (`sm:`, `md:`, `lg:`) for responsive layouts. Mobile us
 
 - **Add featured project**: Edit `projects` array in `src/components/FeaturedProjects.jsx`
 - **Add plan item**: Add `<PlanItemCard>` in `src/pages/PlanPage.jsx`
+  - Update `sectionMeta` array to include new items in sidebar navigation
+  - Ensure item IDs match between `PlanItemCard` and `sectionMeta`
+  - PlanPage displays items in newest-first order (最新在上)
 - **Update social links**: Edit `src/components/SocialLinks.jsx`
 - **Update designer info**: Edit `creators` array in `src/components/CreatorCredits.jsx`
+
+## PlanPage Features
+
+- **Sidebar Navigation** (`PlanSectionSidebar`): Fixed left sidebar on desktop (≥1280px) that tracks scroll position and highlights current section using IntersectionObserver
+- **Smooth Scrolling**: Click sidebar links to smoothly scroll to sections (prevents hash routing conflicts with React Router)
+- **Section Order**: In Progress (進行中) → Completed (已完成), newest items first within each section

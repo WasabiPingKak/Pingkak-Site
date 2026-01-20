@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import MainLayout from "../components/layouts/MainLayout";
 import PlanItemCard from "../components/PlanItemCard";
 import ScrollToTopButton from "../components/ScrollToTopButton";
@@ -28,6 +29,14 @@ const sectionMeta = [
 export default function PlanPage() {
   return (
     <>
+      <Helmet>
+        <title>頻道活動計畫 - 山葵冰角 Wasabi PingKak</title>
+        <meta name="description" content="查看山葵冰角的頻道活動規劃與創作歷程，包含 GeoPingKak 地理探索、VTMap 頻道旅圖、LeetCode 解題冷藏庫等進行中與已完成的專案。" />
+        <meta property="og:title" content="頻道活動計畫 - 山葵冰角" />
+        <meta property="og:description" content="查看山葵冰角的頻道活動規劃與創作歷程" />
+        <meta property="og:url" content="https://wasabipingkak.github.io/Pingkak-Site/#/plan" />
+        <link rel="canonical" href="https://wasabipingkak.github.io/Pingkak-Site/#/plan" />
+      </Helmet>
       <PlanSectionSidebar sections={sectionMeta} />
       <MainLayout>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 space-y-12 text-gray-900 dark:text-white">

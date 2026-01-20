@@ -1,5 +1,6 @@
 // src/pages/ContactPage.jsx
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import {
   FaYoutube,
   FaTwitter,
@@ -13,13 +14,21 @@ import SocialLinks from "../components/SocialLinks";
 export default function ContactPage() {
   return (
     <MainLayout>
+      <Helmet>
+        <title>聯絡方式 - 山葵冰角 Wasabi PingKak</title>
+        <meta name="description" content="歡迎聯絡山葵冰角進行交流、合作邀約或工商洽談。可透過 Twitter、Discord、Email 或 Marshmallow 聯繫。" />
+        <meta property="og:title" content="聯絡方式 - 山葵冰角" />
+        <meta property="og:description" content="歡迎聯絡山葵冰角進行交流與合作洽談" />
+        <meta property="og:url" content="https://wasabipingkak.github.io/Pingkak-Site/#/contact" />
+        <link rel="canonical" href="https://wasabipingkak.github.io/Pingkak-Site/#/contact" />
+      </Helmet>
       <section className=" flex flex-col items-center px-6 md:px-12 lg:px-24 pt-28 pb-12 bg-white dark:bg-gray-900 transition-colors">
         <div className="max-w-5xl w-full flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* 頭像區塊 */}
           <div className="flex-shrink-0">
             <img
               src={`${import.meta.env.BASE_URL}assets/site_icon.png`}
-              alt="Wasabi PingKak 頭像"
+              alt="山葵冰角 Wasabi PingKak 頭像"
               className="w-40 h-40 rounded-full object-cover border-4 border-gray-300 dark:border-gray-700 shadow-md"
             />
           </div>

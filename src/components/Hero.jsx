@@ -36,7 +36,7 @@ export default function Hero() {
         <div className="w-full md:w-1/2 flex justify-center">
           <img
             src={`${import.meta.env.BASE_URL}assets/hero-visual.jpg`}
-            alt="冰角角色圖"
+            alt="山葵冰角 Wasabi PingKak - 工程師 VTuber 角色立繪"
             className="max-h-[600px] w-auto object-contain rounded-2xl shadow-lg"
           />
         </div>

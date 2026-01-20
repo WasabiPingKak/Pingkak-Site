@@ -1,0 +1,10 @@
+# Pingkak-Site robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap 位置
+Sitemap: https://wasabipingkak.github.io/Pingkak-Site/sitemap.xml
+
+# 阻擋不必要的資源
+Disallow: /node_modules/
+Disallow: /*.json$

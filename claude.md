@@ -102,3 +102,31 @@ Use Tailwind breakpoints (`sm:`, `md:`, `lg:`) for responsive layouts. Mobile us
 - **Sidebar Navigation** (`PlanSectionSidebar`): Fixed left sidebar on desktop (≥1280px) that tracks scroll position and highlights current section using IntersectionObserver
 - **Smooth Scrolling**: Click sidebar links to smoothly scroll to sections (prevents hash routing conflicts with React Router)
 - **Section Order**: In Progress (進行中) → Completed (已完成), newest items first within each section
+
+## SEO Configuration
+
+### Documentation
+- **SEO-PRD.md**: Complete SEO optimization plan (technical + content optimization)
+- **SEO-未來規劃參考.md**: Future content strategy and advanced optimization (reference only, not for immediate implementation)
+
+### Current SEO Setup
+- **Meta tags**: Basic meta tags in `index.html` (title, description, keywords, author)
+- **Dynamic meta**: Using `react-helmet-async` for per-page meta tags (each page has unique title/description)
+- **Open Graph**: OG tags for social media preview (Twitter, Facebook, Discord)
+- **Structured data**: JSON-LD schemas (Person, WebSite) in `index.html`
+- **Sitemap**: `public/sitemap.xml` - lists all pages for search engines
+- **Robots.txt**: `public/robots.txt` - controls crawler behavior
+
+### SEO Maintenance
+When adding/updating content:
+- **New page**: Add `<Helmet>` component with unique title/description, update `sitemap.xml`
+- **Content update**: Update page's `<Helmet>` tags if needed, update `sitemap.xml` lastmod date
+- **New images**: Always include descriptive `alt` attributes with relevant keywords
+- **Internal links**: Use descriptive anchor text, link to relevant pages
+
+### Key SEO Rules
+- All images must have descriptive `alt` attributes
+- Each page must have unique title (format: "頁面名稱 - 山葵冰角 Wasabi PingKak")
+- Maintain heading hierarchy (H1 → H2 → H3, no skipping)
+- Never modify existing content text without explicit permission
+- Update `sitemap.xml` lastmod date after significant content changes

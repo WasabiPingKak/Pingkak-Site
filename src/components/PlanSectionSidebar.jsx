@@ -4,6 +4,14 @@ import React, { useEffect, useState } from "react";
 export default function PlanSectionSidebar({ sections }) {
   const [activeId, setActiveId] = useState(null);
 
+  const handleClick = (e, itemId) => {
+    e.preventDefault();
+    const element = document.getElementById(itemId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -38,7 +46,7 @@ export default function PlanSectionSidebar({ sections }) {
   };
 
   return (
-    <nav className="hidden xl:block fixed top-24 right-8 w-64 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-md">
+    <nav className="hidden xl:block fixed top-1/2 -translate-y-1/2 left-8 w-64 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-200 dark:border-gray-700 rounded-lg p-4 shadow-md">
       <div className="space-y-6">
         {sections.map((section) => (
           <div key={section.id}>
@@ -50,7 +58,8 @@ export default function PlanSectionSidebar({ sections }) {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className={`block transition-colors duration-200 ${
+                    onClick={(e) => handleClick(e, item.id)}
+                    className={`block transition-colors duration-200 cursor-pointer ${
                       activeId === item.id
                         ? "text-gray-900 dark:text-white font-semibold"
                         : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"

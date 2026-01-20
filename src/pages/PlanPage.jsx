@@ -7,27 +7,20 @@ import PlanSectionSidebar from "../components/PlanSectionSidebar";
 
 const sectionMeta = [
   {
-    id: "completed",
-    label: "已完成",
-    items: [
-      { id: "completed-初配信", title: "初配信" },
-      { id: "completed-初配信後日談", title: "初配信後日談" },
-    ],
-  },
-  {
     id: "in-progress",
     label: "進行中",
     items: [
-      { id: "in-progress-LeetCode", title: "LeetCode 解題冷藏庫" },
+      { id: "in-progress-GeoPingKak", title: "GeoPingKak" },
       { id: "in-progress-VTMap", title: "VTMap 頻道旅圖" },
+      { id: "in-progress-LeetCode", title: "LeetCode 解題冷藏庫" },
     ],
   },
   {
-    id: "planned",
-    label: "籌備中",
+    id: "completed",
+    label: "已完成",
     items: [
-      { id: "planned-GeoGuessr-教學", title: "GeoGuessr 教學" },
-      { id: "planned-GeoGuessr-直播企劃", title: "GeoGuessr 直播企劃" },
+      { id: "completed-初配信後日談", title: "初配信後日談" },
+      { id: "completed-初配信", title: "初配信" },
     ],
   },
 ];
@@ -35,7 +28,7 @@ const sectionMeta = [
 export default function PlanPage() {
   return (
     <>
-      {/*    <PlanSectionSidebar sections={sectionMeta} /> */}
+      <PlanSectionSidebar sections={sectionMeta} />
       <MainLayout>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 space-y-12 text-gray-900 dark:text-white">
           <h1 className="text-6xl font-bold mb-10 text-center">
@@ -43,62 +36,6 @@ export default function PlanPage() {
             <br className="block md:hidden" />
             活動計劃
           </h1>
-          {/* ✅ 已完成 */}
-          <section id="completed" className="mt-10">
-            <h2 className="mb-8">
-              <span className="block w-full text-4xl font-bold text-center px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800">
-                已完成
-              </span>
-            </h2>
-
-            <div className="space-y-6">
-              <PlanItemCard
-                title="初配信"
-                scheduleText="2023/07/30 ~ 2024/11/13"
-                youtubeId="d-57rW0I9uM"
-                id="completed-初配信"
-              >
-                <p className="mb-3">
-                  如果你想知道整個初配信從無到有的詳細日程，你可以參考這份{" "}
-                  <a
-                    href="https://wasabi-pingkak.notion.site/5cf26b8651f7425abca4aafcdc09ceb3?v=5d5af223f08c4fb8a7ef3b0c410dff38"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    初配信準備進度表
-                  </a>{" "}
-                  了解當時的準備過程與項目。
-                </p>
-              </PlanItemCard>
-
-              <PlanItemCard
-                title="初配信後日談"
-                scheduleText="2025/03/28"
-                youtubeId="bb0mlSsP-XY"
-                id="completed-初配信後日談"
-              >
-                <p className="mb-3">
-                  整個節目就是重新拆解這份{" "}
-                  <a
-                    href="https://wasabi-pingkak.notion.site/5cf26b8651f7425abca4aafcdc09ceb3?v=5d5af223f08c4fb8a7ef3b0c410dff38"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    初配信準備進度表
-                  </a>{" "}
-                  的內容。<br />
-                  <br />
-                  這場後日談直播回顧了我從零開始籌備初配信的整個過程，詳細說明了每個項目的需求、花費與時間成本，也分享了我當時的思考與選擇。<br />
-                  <br />
-                  節目內容包含：哪些項目是我認為「必要的」、每個項目的實際開銷與時程安排，以及我對做功課的重視程度。<br />
-                  如果你正在考慮籌備 V 活動或是準備初配信，這場直播會是一份值得參考的實戰資料。<br />
-                </p>
-              </PlanItemCard>
-            </div>
-          </section>
-
           {/* 🛠️ 進行中 */}
           <section id="in-progress" className="mt-10">
             <h2 className="mb-8">
@@ -109,27 +46,45 @@ export default function PlanPage() {
 
             <div className="space-y-6">
               <PlanItemCard
-                title="LeetCode 解題冷藏庫"
-                scheduleText="2024/11/13 ～ （進行中）"
-                id="in-progress-LeetCode"
+                title="GeoPingKak"
+                scheduleText="2025-07-29 ～ （進行中）"
+                id="in-progress-GeoPingKak"
               >
                 <p className="mb-3">
-                  LeetCode 是專為軟體工程師設計的面試題庫平台，內容多為各大科技公司常見的白板題。
-                  本計劃目標是針對其中出題率最高、最基礎的題目，製作免費的詳解內容，協助讀者理解演算法的設計思路與職場應用場景。
+                  以每日固定題目為核心運作的 GeoGuessr 挑戰與內容系統。
                 </p>
                 <p className="mb-3">
-                  解題方式將包含直播講解、影片製作與文字圖文詳解，並優先處理與求職面試最相關的問題，初期不會涵蓋太困難的題型。
-                  所有內容都會公開免費，只是需要一些時間慢慢做出來。
+                  GeoPingKak 是我目前頻道中主要使用的 GeoGuessr 題目產生與整理系統，用來支撐日常直播內容與觀眾互動。
                 </p>
+                <p className="mb-3">
+                  系統每天固定產生多組 GeoGuessr Challenge 連結，涵蓋世界、台灣、日本三個區域，並各自提供不同難度設定。同一天的挑戰連結對所有玩家皆為相同題目，適合用於練習、對照與重玩。
+                </p>
+                <p className="mb-3">
+                  我的 YouTube 直播內容會直接使用 GeoPingKak 當日產生的題目進行遊玩與講解，觀眾可以在直播當天或之後，透過相同的連結實際重玩該次內容，對照直播中的推理與判斷過程。
+                </p>
+                <p className="mb-3">
+                  目前 GeoPingKak 已穩定運作，並成為我頻道內容更新與網站日常維護的核心基礎。
+                </p>
+                <h3 className="section-heading">
+                  網站
+                </h3>
+                <a
+                  href="https://geopingkak.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 rounded-md bg-blue-600 text-white dark:text-white hover:bg-blue-700 dark:hover:bg-blue-500 text-xl transition"
+                >
+                  🌍 GeoPingKak
+                </a>
 
                 {/* GitHub 專案卡片 */}
                 <div className="mt-6">
                   <h3 className="section-heading">
-                    計劃主頁
+                    Github 專案主頁
                   </h3>
                   <GitHubRepoCard
-                    repo="WasabiPingKak/leetcode_pingkak"
-                    title="冰角的 LeetCode 解題冷藏庫"
+                    repo="WasabiPingKak/GeoPingKak"
+                    title="GeoPingKak"
                   />
                 </div>
               </PlanItemCard>
@@ -172,50 +127,88 @@ export default function PlanPage() {
                 </div>
               </PlanItemCard>
 
+              <PlanItemCard
+                title="LeetCode 解題冷藏庫"
+                scheduleText="2024/11/13 ～ （進行中）"
+                id="in-progress-LeetCode"
+              >
+                <p className="mb-3">
+                  LeetCode 是專為軟體工程師設計的面試題庫平台，內容多為各大科技公司常見的白板題。
+                  本計劃目標是針對其中出題率最高、最基礎的題目，製作免費的詳解內容，協助讀者理解演算法的設計思路與職場應用場景。
+                </p>
+                <p className="mb-3">
+                  解題方式將包含直播講解、影片製作與文字圖文詳解，並優先處理與求職面試最相關的問題，初期不會涵蓋太困難的題型。
+                  所有內容都會公開免費，只是需要一些時間慢慢做出來。
+                </p>
+
+                {/* GitHub 專案卡片 */}
+                <div className="mt-6">
+                  <h3 className="section-heading">
+                    計劃主頁
+                  </h3>
+                  <GitHubRepoCard
+                    repo="WasabiPingKak/leetcode_pingkak"
+                    title="冰角的 LeetCode 解題冷藏庫"
+                  />
+                </div>
+              </PlanItemCard>
+
             </div>
           </section>
 
-          {/* 🧊 籌備中 */}
-          <section id="planned" className="mt-10">
+          {/* ✅ 已完成 */}
+          <section id="completed" className="mt-10">
             <h2 className="mb-8">
-              <span className="block w-full text-4xl font-bold text-center px-4 py-3 rounded-xl border border-blue-200 dark:border-blue-700 bg-blue-100 dark:bg-blue-800 text-blue-900 dark:text-blue-100">
-                籌備中
+              <span className="block w-full text-4xl font-bold text-center px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800">
+                已完成
               </span>
             </h2>
 
             <div className="space-y-6">
               <PlanItemCard
-                title="GeoGuessr 教學"
-                id="planned-GeoGuessr-教學"
+                title="初配信後日談"
+                scheduleText="2025/03/28"
+                youtubeId="bb0mlSsP-XY"
+                id="completed-初配信後日談"
               >
                 <p className="mb-3">
-                  本計劃將為新手玩家設計 GeoGuessr 教學資源，預計推出一個免費練習網站，提供無需註冊即可遊玩的每日任務，涵蓋世界地圖與台灣地圖。
-                </p>
-                <p className="mb-3">
-                  此外網站也將整理常見線索判讀技巧、地形與標誌的觀察方法，並搭配製作一系列教學影片，協助玩家提升實戰能力與判斷準確度。
+                  整個節目就是重新拆解這份{" "}
+                  <a
+                    href="https://wasabi-pingkak.notion.site/5cf26b8651f7425abca4aafcdc09ceb3?v=5d5af223f08c4fb8a7ef3b0c410dff38"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    初配信準備進度表
+                  </a>{" "}
+                  的內容。<br />
+                  <br />
+                  這場後日談直播回顧了我從零開始籌備初配信的整個過程，詳細說明了每個項目的需求、花費與時間成本，也分享了我當時的思考與選擇。<br />
+                  <br />
+                  節目內容包含：哪些項目是我認為「必要的」、每個項目的實際開銷與時程安排，以及我對做功課的重視程度。<br />
+                  如果你正在考慮籌備 V 活動或是準備初配信，這場直播會是一份值得參考的實戰資料。<br />
                 </p>
               </PlanItemCard>
 
               <PlanItemCard
-                title="GeoGuessr 直播企劃"
-                id="planned-GeoGuessr-直播企劃"
+                title="初配信"
+                scheduleText="2023/07/30 ~ 2024/11/13"
+                youtubeId="d-57rW0I9uM"
+                id="completed-初配信"
               >
                 <p className="mb-3">
-                  我會設計一系列自製主題地圖，並整理成直播用的開台企劃書，公開提供給有興趣的 Vtuber 或實況主自由使用。
-                </p>
-                <p className="mb-3">
-                  由於我是出題者，因此我本人不會參與遊玩過程，主播們可以選擇自行安排直播時間，不需事先報名或與我協調。
-                </p>
-                <p className="mb-3">
-                  每份企劃書會包含題目介紹、地圖連結與遊戲說明，方便直接套用到自己的節目中。
-                  目前已確定的主題包括「台灣諧音招牌」與「有趣的台灣地名」。
-                </p>
-                <p className="mb-3">
-                  這個企劃的目標是讓更多創作者能輕鬆嘗試 GeoGuessr 主題直播，不需要付費訂閱遊戲也不需自行設計地圖，就能在免費模式下有完整的節目架構與內容。
+                  如果你想知道整個初配信從無到有的詳細日程，你可以參考這份{" "}
+                  <a
+                    href="https://wasabi-pingkak.notion.site/5cf26b8651f7425abca4aafcdc09ceb3?v=5d5af223f08c4fb8a7ef3b0c410dff38"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    初配信準備進度表
+                  </a>{" "}
+                  了解當時的準備過程與項目。
                 </p>
               </PlanItemCard>
-
-
             </div>
           </section>
         </div >

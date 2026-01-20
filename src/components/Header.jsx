@@ -49,7 +49,7 @@ export default function Header() {
         <Link to="/" className="flex items-center">
           <img
             src={`${import.meta.env.BASE_URL}assets/logo.png`}
-            alt="冰角 LOGO"
+            alt="山葵冰角 Wasabi PingKak LOGO"
             className="h-20 w-auto object-contain"
           />
         </Link>

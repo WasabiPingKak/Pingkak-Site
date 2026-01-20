@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div className="flex-shrink-0">
             <img
               src={`${import.meta.env.BASE_URL}assets/site_icon.png`}
-              alt="Wasabi PingKak 頭像"
+              alt="山葵冰角 Wasabi PingKak 頭像"
               className="w-40 h-40 rounded-full object-cover border-4 border-gray-300 dark:border-gray-700 shadow-md"
             />
           </div>

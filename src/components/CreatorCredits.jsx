@@ -8,18 +8,21 @@ const creators = [
     handle: "@saltcan69210",
     twitter: "https://twitter.com/saltcan69210",
     avatar: "/assets/artist-saltcan.jpg",
+    role: "繪師",
   },
   {
     name: "李安瑟羅Zelo🌻",
     handle: "@LeeAnZelo",
     twitter: "https://twitter.com/LeeAnZelo",
     avatar: "/assets/rigger-zelo.jpg",
+    role: "建模師",
   },
   {
     name: "莓果雪酪/ベリー",
     handle: "@berrysorbet_58",
     twitter: "https://twitter.com/berrysorbet_58",
     avatar: "/assets/logo-berrysorbet.jpg",
+    role: "LOGO 設計師",
   },
 ];
 
@@ -84,23 +87,23 @@ export default function CreatorCredits() {
         <div className="space-y-8">
           <ImageDownloadCard
             imageSrc="assets/LOGO_complete.png"
-            alt="Wasabi PingKak LOGO"
+            alt="山葵冰角 LOGO 標準字設計"
           />
           <ImageDownloadCard
             imageSrc="assets/draft.jpg"
-            alt="草圖"
+            alt="山葵冰角角色設計草圖"
             downloadUrl="https://drive.google.com/file/d/1NV8rR6mtXSs6Gj5-dc50mH7TlWI4HE24/view"
             caption="點我下載 草圖"
           />
           <ImageDownloadCard
             imageSrc="assets/model-front.png"
-            alt="三視圖正面"
+            alt="山葵冰角角色三視圖設定（正面）"
             downloadUrl="https://drive.google.com/file/d/12HSzW7xsiL2R-DrNIG0m9gi_DhT4w70J/view"
             caption="點我下載 三視圖（正面）"
           />
           <ImageDownloadCard
             imageSrc="assets/model-back.png"
-            alt="三視圖背面"
+            alt="山葵冰角角色三視圖設定（背面）"
             downloadUrl="https://drive.google.com/file/d/1qTIS3zfsUqQ_blqiqNscinJyDwB6bSP2/view"
             caption="點我下載 三視圖（背面）"
           />

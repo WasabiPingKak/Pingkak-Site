@@ -1,7 +1,7 @@
 // src/components/CreatorCard.jsx
 import React from "react";
 
-export default function CreatorCard({ name, handle, avatar, twitter }) {
+export default function CreatorCard({ name, handle, avatar, twitter, role }) {
   return (
     <a
       href={twitter}
@@ -11,7 +11,7 @@ export default function CreatorCard({ name, handle, avatar, twitter }) {
     >
       <img
         src={`${import.meta.env.BASE_URL}${avatar}`}
-        alt={name}
+        alt={`${name} - 山葵冰角${role}`}
         className="w-32 h-32 rounded-full object-cover"
       />
       <div className="text-center md:text-left">

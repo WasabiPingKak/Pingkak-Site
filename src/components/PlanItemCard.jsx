@@ -4,7 +4,7 @@ export default function PlanItemCard({ title, youtubeId, scheduleText, children,
   return (
     <div id={id} className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white dark:bg-gray-800 shadow-sm">
       {/* 標題 */}
-      <h2 className="text-3xl font-bold mb-4 text-center">{title}</h2>
+      <h3 className="text-3xl font-bold mb-4 text-center">{title}</h3>
 
       {/* 說明文字區塊（從 children 傳入） */}
       {children && (
@@ -16,7 +16,7 @@ export default function PlanItemCard({ title, youtubeId, scheduleText, children,
       {/* 日程文字（從外層傳入） */}
       {scheduleText && (
         <>
-          <h3 className="section-heading">📅 日程</h3>
+          <div className="font-bold text-lg mb-2 text-gray-900 dark:text-white">📅 日程</div>
           <p className="text-xl text-gray-500 dark:text-gray-400 mb-3">
             {scheduleText}
           </p>

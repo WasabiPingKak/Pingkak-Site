@@ -5,7 +5,9 @@ import {
   FaDiscord,
   FaGithub,
   FaEnvelope,
+  FaInstagram,
 } from "react-icons/fa";
+import { FaThreads } from "react-icons/fa6";
 
 export default function SocialLinks() {
   return (
@@ -27,6 +29,24 @@ export default function SocialLinks() {
         className="text-gray-700 dark:text-gray-300 hover:text-sky-500 transition-colors text-2xl"
       >
         <FaTwitter />
+      </a>
+      <a
+        href="https://www.instagram.com/wasabi_pingkak/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+        className="text-gray-700 dark:text-gray-300 hover:text-pink-500 transition-colors text-2xl"
+      >
+        <FaInstagram />
+      </a>
+      <a
+        href="https://www.threads.com/@wasabi_pingkak"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Threads"
+        className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors text-2xl"
+      >
+        <FaThreads />
       </a>
       <a
         href="https://discord.gg/ABpdGBbDe4"

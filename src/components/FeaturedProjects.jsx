@@ -3,14 +3,14 @@ import React from "react";
 
 const projects = [
   {
-    title: "🗺️ VTMap 頻道旅圖｜Vtuber TrailMap",
-    description: "Vtuber 頻道分析與導流工具，讓你快速發現有趣的直播與頻道。",
-    link: "https://www.vtubertrailmap.com/",
-  },
-  {
     title: "🌍 GeoPingKak",
     description: "GeoGuessr 的推廣網站，提供每日免費五題遊玩連結與教學",
     link: "https://geopingkak.web.app/",
+  },
+  {
+    title: "🗺️ VTMap 頻道旅圖｜Vtuber TrailMap",
+    description: "Vtuber 頻道分析與導流工具，讓你快速發現有趣的直播與頻道。",
+    link: "https://www.vtubertrailmap.com/",
   },
   {
     title: "❄️ LeetCode 冷藏庫",

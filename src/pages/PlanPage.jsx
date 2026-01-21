@@ -138,7 +138,7 @@ export default function PlanPage() {
 
               <PlanItemCard
                 title="LeetCode 解題冷藏庫"
-                scheduleText="2024/11/13 ～ （進行中）"
+                scheduleText="2024/11/13 ～ （不定期更新）"
                 id="in-progress-LeetCode"
               >
                 <p className="mb-3">

@@ -88,7 +88,7 @@ export default function Header() {
               to="/creator-credits"
               className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition"
             >
-              設計
+              三視圖
             </Link>
             <Link
               to="/plan"
@@ -128,7 +128,7 @@ export default function Header() {
               className="px-6 py-2 text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
               onClick={() => setMenuOpen(false)}
             >
-              設計
+              三視圖
             </Link>
             <Link
               to="/plan"

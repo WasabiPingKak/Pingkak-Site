@@ -1,18 +1,27 @@
 # Wasabi PingKak 的個人網站
 
+[![GitHub Pages Deploy](https://img.shields.io/github/deployments/WasabiPingKak/Pingkak-Site/github-pages?label=deploy)](https://wasabipingkak.github.io/Pingkak-Site/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 這是 Wasabi PingKak 的個人網站，使用 React 19 + Vite 7 + Tailwind CSS 3 製作，並部署在 GitHub Pages 上，作為介紹創作、頻道計劃與專案整理的平台。
 
 👉 [網站連結](https://wasabipingkak.github.io/Pingkak-Site/)
+
+<!--
+TODO: 加入網站截圖
+![網站預覽 - 淺色模式](docs/screenshot-light.png)
+![網站預覽 - 深色模式](docs/screenshot-dark.png)
+-->
 
 ---
 
 ## 🛠️ 技術棧
 
-- **React** 19.2.1 - 前端框架
-- **Vite** 7.0.4 - 建構工具
-- **Tailwind CSS** 3.4.17 - CSS 框架
-- **React Router DOM** 7.10.1 - 路由管理（HashRouter）
-- **React Icons** 5.5.0 - 圖標庫
+- **React** - 前端框架
+- **Vite** - 建構工具
+- **Tailwind CSS** - CSS 框架
+- **React Router DOM** - 路由管理（HashRouter）
+- **React Icons** - 圖標庫
 
 ---
 
@@ -31,6 +40,16 @@ npm run dev
 ### 建立正式版（產生 dist/）
 ```bash
 npm run build
+```
+
+### 預覽正式版
+```bash
+npm run preview
+```
+
+### 程式碼檢查
+```bash
+npm run lint
 ```
 
 ### 部署到 GitHub Pages
@@ -77,44 +96,6 @@ npm run deploy
 
 ---
 
-## ✨ 網站功能
+## 📄 授權
 
-### 四個主要頁面
-1. **首頁** (`/`) - 個人介紹、社群連結、精選專案
-2. **設計** (`/creator-credits`) - 繪師、建模師、LOGO 設計師介紹與設計資源
-3. **頻道計劃** (`/plan`) - 進行中與已完成的專案與活動，包含側邊目錄導航
-4. **聯絡我** (`/contact`) - 聯絡資訊與社群連結
-
-### 核心特性
-- 🌓 **深色模式支援** - 使用 Tailwind `class` 模式切換，設定儲存於 localStorage
-- 📱 **完整響應式設計** - 支援手機、平板、桌面三種尺寸
-- 🎯 **Header 自動隱藏** - 向下捲動時淡出，向上捲動時淡入
-- ⬆️ **回到頂部按鈕** - 捲動一定距離後顯示
-- 🎬 **YouTube 影片嵌入** - 在計劃頁面展示影片內容
-- 🔗 **外部連結整合** - Notion、GitHub、Twitter 等平台連結
-- 🎨 **現代化 UI** - 使用 Tailwind CSS 與毛玻璃效果
-
----
-
-## 📌 開發注意事項
-
-### 樣式設計原則
-- Tailwind 深色模式採用 `class` 模式切換
-- 背景統一使用 `dark:bg-gray-900/80`
-- 文字顏色：標題用 `dark:text-white`，內文用 `dark:text-gray-300`
-- 邊框顏色：`dark:border-gray-700` 或 `dark:border-gray-800`
-
-### 路由系統
-- 使用 **HashRouter** 而非 BrowserRouter（因 GitHub Pages 限制）
-- 確保 Vite 配置中的 `base` 設定正確：`/Pingkak-Site/`
-
-### 資源路徑
-- 靜態資源使用 `${import.meta.env.BASE_URL}assets/...` 確保路徑正確
-
----
-
-## 📖 詳細文件
-
-更多詳細的專案說明、元件介紹與維護指南，請參閱 [claude.md](./claude.md)。
-
----
+本專案採用 [MIT License](./LICENSE) 授權。

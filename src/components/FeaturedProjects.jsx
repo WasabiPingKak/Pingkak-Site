@@ -8,6 +8,11 @@ const projects = [
     link: "https://geopingkak.web.app/",
   },
   {
+    title: "🧬 VTaxon 生物分類",
+    description: "VTuber 生物分類系統，根據外觀特徵將每位 VTuber 放進分類樹。",
+    link: "https://vtaxon.com/",
+  },
+  {
     title: "🗺️ VTMap 頻道旅圖｜Vtuber TrailMap",
     description: "Vtuber 頻道分析與導流工具，讓你快速發現有趣的直播與頻道。",
     link: "https://www.vtubertrailmap.com/",

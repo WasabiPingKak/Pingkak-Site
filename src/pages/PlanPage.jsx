@@ -12,6 +12,7 @@ const sectionMeta = [
     label: "進行中",
     items: [
       { id: "in-progress-GeoPingKak", title: "GeoPingKak" },
+      { id: "in-progress-VTaxon", title: "VTaxon 生物分類" },
       { id: "in-progress-VTMap", title: "VTMap 頻道旅圖" },
       { id: "in-progress-LeetCode", title: "LeetCode 解題冷藏庫" },
     ],
@@ -31,7 +32,7 @@ export default function PlanPage() {
     <>
       <Helmet>
         <title>頻道活動計畫 - 山葵冰角 Wasabi PingKak</title>
-        <meta name="description" content="查看山葵冰角的頻道活動規劃與創作歷程，包含 GeoPingKak 地理探索、VTMap 頻道旅圖、LeetCode 解題冷藏庫等進行中與已完成的專案。" />
+        <meta name="description" content="查看山葵冰角的頻道活動規劃與創作歷程，包含 GeoPingKak 地理探索、VTaxon 生物分類、VTMap 頻道旅圖、LeetCode 解題冷藏庫等進行中與已完成的專案。" />
         <meta property="og:title" content="頻道活動計畫 - 山葵冰角" />
         <meta property="og:description" content="查看山葵冰角的頻道活動規劃與創作歷程" />
         <meta property="og:url" content="https://wasabipingkak.github.io/Pingkak-Site/#/plan" />
@@ -94,6 +95,47 @@ export default function PlanPage() {
                   <GitHubRepoCard
                     repo="WasabiPingKak/GeoPingKak"
                     title="GeoPingKak"
+                  />
+                </div>
+              </PlanItemCard>
+
+              <PlanItemCard
+                title="VTaxon 生物分類"
+                scheduleText="2026/03 ～ （進行中）"
+                id="in-progress-VTaxon"
+              >
+                <p className="mb-3">
+                  VTaxon 是一套 VTuber 生物分類系統，根據每位 VTuber 的外觀特徵（例如貓耳、狐耳、翅膀等），將其對應到現實或虛構的生物分類樹中。
+                </p>
+                <p className="mb-3">
+                  VTuber 社群中有非常多以動物為原型的角色設計，但大家在設計角色時，往往不太清楚自己選擇的物種在生物分類上還有哪些「鄰居」。VTaxon 的出發點就是提供一個公開的分類索引，讓每位創作者都能登記自己的物種歸屬，同時也方便想要尋找同類型角色的人找到彼此。
+                </p>
+                <p className="mb-3">
+                  貓耳是貓科、狐耳是犬科、有翅膀的……那就複合種！每個 VTuber 都有自己的物種，我們負責把你放進分類樹。
+                </p>
+                <p className="mb-3">
+                  希望透過這個工具，讓角色設計的物種選擇變得更透明、更有趣，也讓同一個物種圈的創作者有機會互相認識與交流。
+                </p>
+                <h3 className="section-heading">
+                  網站
+                </h3>
+                <a
+                  href="https://vtaxon.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 rounded-md bg-blue-600 text-white dark:text-white hover:bg-blue-700 dark:hover:bg-blue-500 text-xl transition"
+                >
+                  🧬 VTaxon 生物分類
+                </a>
+
+                {/* GitHub 專案卡片 */}
+                <div className="mt-6">
+                  <h3 className="section-heading">
+                    Github 專案主頁
+                  </h3>
+                  <GitHubRepoCard
+                    repo="WasabiPingKak/VTaxon"
+                    title="VTaxon"
                   />
                 </div>
               </PlanItemCard>

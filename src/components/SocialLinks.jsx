@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import {
   FaYoutube,
   FaTwitter,
@@ -6,12 +6,34 @@ import {
   FaGithub,
   FaEnvelope,
   FaInstagram,
+  FaCheck,
 } from "react-icons/fa";
 import { FaThreads } from "react-icons/fa6";
 
+const EMAIL = "wasabi.pingkak@gmail.com";
+
 export default function SocialLinks() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = EMAIL;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, []);
+
   return (
-    <div className="flex justify-center md:justify-start gap-6 pt-2">
+    <div className="flex items-center justify-center md:justify-start gap-6 pt-2">
       <a
         href="https://www.youtube.com/@PingKak山葵冰角"
         target="_blank"
@@ -66,13 +88,15 @@ export default function SocialLinks() {
       >
         <FaGithub />
       </a>
-      <a
-        href="mailto:wasabi.pingkak@gmail.com"
-        aria-label="Gmail"
-        className="text-gray-700 dark:text-gray-300 hover:text-rose-500 transition-colors text-2xl"
+      <button
+        type="button"
+        onClick={handleCopyEmail}
+        aria-label={copied ? "已複製 Email" : "複製 Email"}
+        title={copied ? "已複製！" : EMAIL}
+        className="text-gray-700 dark:text-gray-300 hover:text-rose-500 transition-colors text-2xl cursor-pointer"
       >
-        <FaEnvelope />
-      </a>
+        {copied ? <FaCheck className="text-green-500" /> : <FaEnvelope />}
+      </button>
       <a
         href="https://marshmallow-qa.com/igxgfwwgas5cp1r"
         target="_blank"

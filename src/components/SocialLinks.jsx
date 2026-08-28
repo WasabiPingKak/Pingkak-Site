@@ -1,6 +1,7 @@
 import React, { useState, useCallback } from "react";
 import {
   FaYoutube,
+  FaTwitch,
   FaTwitter,
   FaDiscord,
   FaGithub,
@@ -42,6 +43,15 @@ export default function SocialLinks() {
         className="text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors text-2xl"
       >
         <FaYoutube />
+      </a>
+      <a
+        href="https://www.twitch.tv/wasabi_pingkak"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Twitch"
+        className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors text-2xl"
+      >
+        <FaTwitch />
       </a>
       <a
         href="https://twitter.com/wasabi_pingkak"
